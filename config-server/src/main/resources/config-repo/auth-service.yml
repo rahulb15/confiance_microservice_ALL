@@ -1,0 +1,25 @@
+spring:
+  datasource:
+#    url: jdbc:mysql://localhost:3306/auth_db
+    url: jdbc:mysql://mysql:3306/auth_db  # Use Docker service name
+    username: auth_user
+    password: auth_password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+    show-sql: false
+
+jwt:
+  secret: mySecretKey123456789012345678901234567890
+  expiration: 86400000
+  refresh-expiration: 604800000
+
+logging:
+  level:
+    com.microservices.auth: DEBUG
