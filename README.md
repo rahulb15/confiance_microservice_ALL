@@ -1,8 +1,6 @@
-# Microservices Architecture - Industrial Level
+# Microservices Architecture
 
 ## 🏗️ Architecture Overview
-
-This is a complete, production-ready microservices architecture built with Spring Boot, featuring:
 
 - **Service Discovery** (Eureka Server)
 - **Configuration Management** (Config Server)
